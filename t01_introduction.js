@@ -1,15 +1,18 @@
 /*****************************
-Linson's Website
+ Linson's JV Website
 /****************************/
-console.log("../t01_introduction.js")
-console.log("hello")
-//variables*******************/
+console.log ("../t01_introduction.js")
+console.log ( "Hello" )
+//variables
+
+/******************************/
+
+ /******************************/
 
 
-/******************************
- main code
- ******************************/
+
 /****************************
  functions
+
 **************************** */
 
