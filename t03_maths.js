@@ -37,6 +37,8 @@ var year = 2026;
  console.log("in 10 years you will be "+ answer +" years old")
 answer = pocketmoney / 2
  console.log("if you spent half of your money, you would have "+ answer)
+ answer = pocketmoney / 2 + 3
+ console.log("then you get $3, now you have " +  answer)
 
 /****************************
  functions

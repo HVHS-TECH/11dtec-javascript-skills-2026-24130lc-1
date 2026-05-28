@@ -37,6 +37,16 @@ var coolnumber = 3;
  OUTPUT.innerHTML += "<p>Hello</p>"
  OUTPUT.innerHTML += "<p>Hello " + name + "</p>"
  OUTPUT.innerHTML += "<p>Last</p>"
+
+ answer = year - age
+ console.log("You were born in ", answer)
+ answer = age + 10
+ console.log("in 10 years you will be "+ answer +" years old")
+answer = pocketmoney / 2
+ console.log("if you spent half of your money, you would have "+ answer)
+ answer = pocketmoney / 2 + 3
+ console.log("then you get $3, now you have " +  answer)
+
 /****************************
  functions
 
