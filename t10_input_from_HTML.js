@@ -13,6 +13,8 @@ var userName = "Anger Dingus";
 const OUTPUT = document.getElementById("JavaScriptOutput");
 console.log(OUTPUT);
 var MrPoopyHead = "MrPoopyHead";
+var year = "2026"
+var pocketmoney = "30"
 /******************************/
 function Start() {
     spaceForJavaScriptOutput.innerHTML
@@ -80,10 +82,15 @@ answer = age + 10
 console.log("in 10 years you will be "+ answer +" years old")
 answer = pocketmoney / 2
 console.log("if you spent half of your money, you would have "+ answer)
-answer = pocketmoney
+answer = pocketmoney / 2 + 3
 console.log("then you get $3, now you have " +  answer)
 
 
+function getFormInput(){
+    const NAME_FIELD = document.getElementById("nameField");
+    let username = NAME_FIELD.value;
+    OUTPUT.innerHTML = "<p>Your Name is "+username+"</p>";
+}
 
 
 

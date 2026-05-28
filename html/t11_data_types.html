@@ -18,7 +18,15 @@
 <body>
   <h1>T11-data types</h1>
   <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
-
+  <form onsubmit="return false;"></form>
+  <label for="formName">Name:</label>
+    <input type="text" id="nameField" name="formName"></input>
+    <label for="formName">Age:</label>
+    <input type="text" id="ageField" name="formAge"></input>
+    <label for="formName">Money:</label>
+    <input type="text" id="moneyField" name="formMoney"></input>
+    <input type="submit" onClick=getFormInput()></input>
+</form>
   <div id="JavaScriptOutput">
     <p>This will be replaced</p>
   </div>
@@ -28,11 +36,7 @@
 
   <div id="spaceForJavaScriptOutput"></div>
 
-  <form onsubmit="return false;"></form>
-  <label for="formName">Name:</label>
-    <input type="text" id="nameField" name="formName"></input>
-    <input type="submit" onClick=getFormInput()></input>
-</form>
+ 
 
   <script src="../t11_data_types.js"></script>
 

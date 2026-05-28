@@ -31,9 +31,10 @@
 
   <div id="spaceForJavaScriptOutput"></div>
 
-  <form>
-    <input type="text"></input>
-    <input type="submit"></input>
+  <form onsubmit="return false;"></form>
+  <label for="formName">cool ass name:</label>
+    <input type="text" id="nameField" name="formName"></input>
+    <input type="submit" onClick=getFormInput()></input>
 </form>
 
   <script src="../t10_input_from_HTML.js"></script>

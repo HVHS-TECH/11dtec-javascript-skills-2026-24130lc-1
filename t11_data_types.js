@@ -9,10 +9,12 @@ var isStudent = true;
 var pocketMoney = 67;
 var supernumber = 2;
 var coolnumber = 3;
-
-var year = 2026;
 var userName = "Anger Dingus";
+const OUTPUT = document.getElementById("JavaScriptOutput");
+console.log(OUTPUT);
 var MrPoopyHead = "MrPoopyHead";
+var year = "2026"
+var pocketmoney = "30"
 /******************************/
 function Start() {
     spaceForJavaScriptOutput.innerHTML
@@ -69,18 +71,35 @@ function displayWelcome(_name) {
     OUTPUT.innerHTML += "<p>Welcome to the page " + _name + "</p>";
 }
 
+function Monkey(_cool, _age) {
+    OUTPUT.innerHTML += "<p>Good Morning, " + _cool + "</p>";
+    OUTPUT.innerHTML += "<p>You are " + _age + " years old</p>";
+}
+
 answer = year - age
 console.log("You were born in ", answer)
 answer = age + 10
 console.log("in 10 years you will be "+ answer +" years old")
-answer = pocketMoney / 2
+answer = pocketmoney / 2
 console.log("if you spent half of your money, you would have "+ answer)
-answer = pocketMoney / 2 + 3
+answer = pocketmoney / 2 + 3
 console.log("then you get $3, now you have " +  answer)
 
 
-const OUTPUT = document.getElementById("JavaScriptOutput");
-OUTPUT.innerHTML = "Hello World!<br>";
+function getFormInput(){
+    const NAME_FIELD = document.getElementById("nameField");
+    let username = NAME_FIELD.value;
+    OUTPUT.innerHTML = "<p>Your Name is "+username+"</p>";
+
+    const AGE_FIELD = document.getElementById("ageField");
+    let userage = AGE_FIELD.value;
+    OUTPUT.innerHTML += "<p>You are "+userage+" years old</p>";
+
+    const MONEY_FIELD = document.getElementById("moneyField");
+    let usermoney = MONEY_FIELD.value;
+    OUTPUT.innerHTML += "<p>You have "+usermoney+" Dollars</p>";
+}
+
 
 
 
