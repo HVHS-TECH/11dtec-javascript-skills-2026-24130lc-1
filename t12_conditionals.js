@@ -1,5 +1,5 @@
 /*****************************
- Linson's JV Website
+ Linson's JV Website fjwejidfvskjinvffvrsajklfejk
 /****************************/
 
 //variables
@@ -9,14 +9,12 @@ var isStudent = true;
 var pocketMoney = 67;
 var supernumber = 2;
 var coolnumber = 3;
-var userName = "Ander Dingus";
+var userName = "Anger Dingus";
 const OUTPUT = document.getElementById("JavaScriptOutput");
 console.log(OUTPUT);
 var MrPoopyHead = "MrPoopyHead";
-
-var drivingAge = 16;
-var schoolName = "HVHS";
-var validReply = false;
+var year = "2026"
+var pocketmoney = "30"
 /******************************/
 function Start() {
     spaceForJavaScriptOutput.innerHTML
@@ -78,19 +76,34 @@ function Monkey(_cool, _age) {
     OUTPUT.innerHTML += "<p>You are " + _age + " years old</p>";
 }
 
-let userAgeString = AGE_FIELD.value;
-let userAgeNumber = Number(userAgeString);
+answer = year - age
+console.log("You were born in ", answer)
+answer = age + 10
+console.log("in 10 years you will be "+ answer +" years old")
+answer = pocketmoney / 2
+console.log("if you spent half of your money, you would have "+ answer)
+answer = pocketmoney / 2 + 3
+console.log("then you get $3, now you have " +  answer)
 
-if (age < 70){
-    console.log("too young")
+
+function getFormInput(){
+    const NAME_FIELD = document.getElementById("nameField");
+    let username = NAME_FIELD.value;
+    OUTPUT.innerHTML = "<p>Your Name is "+username+"</p>";
+
+    const AGE_FIELD = document.getElementById("ageField");
+    let userage = AGE_FIELD.value;
+    OUTPUT.innerHTML += "<p>You are "+userage+" years old</p>";
+
+    const MONEY_FIELD = document.getElementById("moneyField");
+    let usermoney = MONEY_FIELD.value;
+    OUTPUT.innerHTML += "<p>You have "+usermoney+" Dollars</p>";
 }
 
-if (age >= 70){
-    console.log("too old")
-}
-
-if (age == 70){
-    console.log("good age")
+function getFormInput(){
+    const QUESTION_FIELD = document.getElementById("questionField");
+    let userquestion = QUESTION_FIELD.value;
+    OUTPUT.innerHTML += "<p>You asked: "+userquestion+"</p>";
 }
 
 
